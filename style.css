@@ -265,10 +265,11 @@ svg * {
         letter-spacing: -0.2px;
         text-decoration: none;
         color: var(--black-color);
-        background: url("/images/arrow.svg") no-repeat;
+        background: url("images/arrow.svg") no-repeat;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .arrow-link{
+    color: var(--black-color);
     transition: .2s linear;
 }
 
@@ -280,7 +281,7 @@ svg * {
 
 .arrow-link--open{
     color: var(--black-color);
-    background: url("/images/arrow-open.svg") no-repeat;
+    background: url("images/arrow-open.svg") no-repeat;
     transition: .2s leaner;
 }
 
