@@ -21,15 +21,6 @@ arrowLinkClass.addEventListener('click',(event) => {
 
 
 
-function handler(e){
-    var el = e.target;
-    if(el.innerHTML == "Скрыть все"){
-        el.innerHTML = "Показать все";
-    } else {
-        el.innerHTML = "Скрыть все";
-    }
-}
-
 
 let mql = window.matchMedia('(max-width: 767px)');
 
