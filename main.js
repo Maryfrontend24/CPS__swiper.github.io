@@ -1,6 +1,6 @@
 var arrowLinkClass = document.querySelector('.arrow-link');
 
-arrowLinkClass.addEventListener('click',(event) => {
+arrowLinkClass.addEventListener('click',  (event) => {
     event.preventDefault();
     let itemsListClass = document.querySelector('.items__list');
     if (itemsListClass.classList.contains('unset-block')&& arrowLinkClass.classList.contains('arrow-link--open')) {
@@ -13,7 +13,7 @@ arrowLinkClass.addEventListener('click',(event) => {
     }
     itemsListClass.classList.add('unset-block');
     arrowLinkClass.classList.add('arrow-link--open');
-    arrowLinkClass.innerHTML="Скрыть все"
+    arrowLinkClass.innerHTML="Скрыть все";
 
 })
 
