@@ -1,25 +1,34 @@
 var arrowLinkClass = document.querySelector('.arrow-link');
 
-arrowLinkClass.addEventListener('click', (event) => {
+arrowLinkClass.addEventListener('click',(event) => {
     event.preventDefault();
     let itemsListClass = document.querySelector('.items__list');
     if (itemsListClass.classList.contains('unset-block')&& arrowLinkClass.classList.contains('arrow-link--open')) {
         itemsListClass.classList.remove('unset-block');
         arrowLinkClass.classList.remove('arrow-link--open');
+        arrowLinkClass.innerHTML="Показать все";
 
 
-        return;
+        return ;
     }
     itemsListClass.classList.add('unset-block');
     arrowLinkClass.classList.add('arrow-link--open');
+    arrowLinkClass.innerHTML="Скрыть все"
+
 })
-//
 
 
 
 
 
-
+function handler(e){
+    var el = e.target;
+    if(el.innerHTML == "Скрыть все"){
+        el.innerHTML = "Показать все";
+    } else {
+        el.innerHTML = "Скрыть все";
+    }
+}
 
 
 let mql = window.matchMedia('(max-width: 767px)');
@@ -44,9 +53,7 @@ window.addEventListener('resize', () => {
             controller: {
                 invert: true,
             },
-            autoplay: {
-                delay: 2000,
-            },
+
         });
     } else {
         swiper.destroy();

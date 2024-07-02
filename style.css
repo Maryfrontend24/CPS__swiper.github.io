@@ -269,7 +269,6 @@ svg * {
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .arrow-link{
-    color: var(--black-color);
     transition: .2s linear;
 }
 
